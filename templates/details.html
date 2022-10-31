@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>The details of student</h1>
+{% for i in data %}
+<h3>{{i.id}}</h3>
+    <h3>{{i.fname}}</h3>
+<h3>{{i.lname}}</h3>
+
+<a href="/a/delete/{{i.id}}">Delete</a>
+<hr/>
+{% endfor %}
+</body>
+</html>
